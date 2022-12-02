@@ -1,0 +1,27 @@
+const pets = [
+  { name: "rock", price: 5, color: "gray", animal: false },
+  { name: "dog", price: 25, color: "brown", animal: true },
+  { name: "fish", price: 2, color: "orange", animal: true },
+  { name: "mouse", price: 15, color: "gray", animal: true },
+  { name: "gaming mouse", price: 45, color: "rbg", animal: false },
+  { name: "lizard", price: 16, color: "orange", animal: true },
+  { name: "ketchup packet", price: 1, color: "red", animal: false },
+  { name: "crab", price: 42, color: "red", animal: true },
+  { name: "flashdrive", price: 7, color: "gray", animal: false },
+  { name: "monkey", price: 892, color: "brown", animal: true },
+  { name: "banana slug", price: 92, color: "orange", animal: true },
+  { name: "starfish", price: 68, color: "red", animal: true },
+  { name: "beetle", price: 23, color: "brown", animal: true },
+  { name: "beatles", price: 12899, color: "white", animal: true },
+  { name: "tiger", price: 4212, color: "orange", animal: true },
+  { name: "jello", price: 3, color: "red", animal: false },
+  { name: "crab", price: 42, color: "orange", animal: true },
+  { name: "redwood tree", price: 2131, color: "brown", animal: false },
+  { name: "spider", price: 23, color: "brown", animal: true },
+  { name: "spiderman", price: 423, color: "white", animal: true },
+  { name: "spotted lanturn fly", price: 0.02, color: "red", animal: true },
+  { name: "pizza", price: 3, color: "orange", animal: false },
+  { name: "hot dog", price: 4, color: "red", animal: true },
+];
+
+console.log(pets);
