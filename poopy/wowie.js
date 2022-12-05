@@ -24,4 +24,4 @@ const pets = [
   { name: "hot dog", price: 4, color: "red", animal: true },
 ];
 
-console.log(pets);
+export { pets };

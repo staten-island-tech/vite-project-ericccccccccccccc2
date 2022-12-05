@@ -1,11 +1,11 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import "./style.css";
+import { pets } from "./wowie";
 
-document.querySelector('#menu').innerHTML = `
-  <div>
+function objectMaker(element) {
+  let name = pets.element.name;
+  return `<p>${name}</p>`;
+}
 
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+document.querySelector("#one").innerHTML = `
+<p>amongus</p>
+`;
