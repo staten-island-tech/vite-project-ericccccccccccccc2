@@ -1,12 +1,19 @@
 .parent {
-
   display: flex;
   justify-content: center;
   align-content: horizontal;
-  flex-wrap: wrap;
-
 }
 
 h1 {
   text-align: center;
+}
+
+.subtitles {
+  text-align: center;
+}
+
+.image { 
+height: 200px;
+width: 250px;
+display: flexbox;
 }

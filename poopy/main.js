@@ -1,11 +1,11 @@
 import "./style.css";
 import { pets } from "./wowie";
 
-const div = document.getElementById("one");
+let domdiv = document.getElementById("one");
 
 pets.forEach((element) =>
-  div.insertAdjacentHTML(
+  domdiv.insertAdjacentHTML(
     "afterend",
-    `<p>${element.name}</p> <img src="${element.url}" alt="">`
+    `<p class = "subtitles">${element.name}, ${element.price} dollars</p> <img class = "image" src="${element.url}" alt="">`
   )
 );
