@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-content: horizontal;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -13,7 +14,10 @@ h1 {
 }
 
 .image { 
-height: 200px;
-width: 250px;
-display: flexbox;
+height: 250px;
+width: 300px;
+}
+
+.help {
+  margin: 50px;
 }
