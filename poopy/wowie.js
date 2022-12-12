@@ -93,7 +93,7 @@ const pets = [
   {
     name: "beatles",
     price: 12899,
-    color: "white",
+    color: "gray",
     animal: true,
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/The_Fabs.JPG/220px-The_Fabs.JPG",
   },
@@ -135,7 +135,7 @@ const pets = [
   {
     name: "spiderman",
     price: 423,
-    color: "white",
+    color: "red",
     animal: true,
     url: "https://insidethemagic.net/wp-content/uploads/2021/12/Spider-Man2-800x400.png",
   },
