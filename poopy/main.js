@@ -1,32 +1,33 @@
 import "./style.css";
 import { pets } from "./wowie";
 
-let domdiv = document.getElementById("one");
-let redbutton = document.getElementById("red");
-let orangebutton = document.getElementById("orange");
-let normalbutton = document.getElementById("normal");
-let brownbutton = document.getElementById("brown");
-let graybutton = document.getElementById("gray");
-let whitebutton = document.getElementById("white");
-let nonanimal = document.getElementById("animalOrNah");
-
+const DOMSelectors = {
+  domdiv: document.getElementById("one"),
+  redbutton: document.getElementById("red"),
+  orangebutton: document.getElementById("orange"),
+  normalbutton: document.getElementById("normal"),
+  brownbutton: document.getElementById("brown"),
+  graybutton: document.getElementById("gray"),
+  darkbutton: document.getElementById("dark"),
+};
 function wowie() {
-  domdiv.innerHTML = "";
+  DOMSelectors.domdiv.innerHTML = "";
   pets.forEach((element) =>
-    domdiv.insertAdjacentHTML(
+    DOMSelectors.domdiv.insertAdjacentHTML(
       "beforeend",
       `<div class = "help"><img class = "image" src="${element.url}" alt=""> <p class = "subtitles">${element.name}, ${element.price} dollars</p> </div>`
     )
   );
+  document.body.classList.remove("dark");
 }
 
 wowie();
 
 function redColor() {
   let temp = pets.filter((element) => element.color == "red");
-  domdiv.innerHTML = "";
+  DOMSelectors.domdiv.innerHTML = "";
   temp.forEach((element) =>
-    domdiv.insertAdjacentHTML(
+    DOMSelectors.domdiv.insertAdjacentHTML(
       "beforeend",
       `<div class = "help"><img class = "image" src="${element.url}" alt=""> <p class = "subtitles">${element.name}, ${element.price} dollars</p> </div>`
     )
@@ -35,9 +36,9 @@ function redColor() {
 
 function orangeColor() {
   let temp = pets.filter((element) => element.color == "orange");
-  domdiv.innerHTML = "";
+  DOMSelectors.domdiv.innerHTML = "";
   temp.forEach((element) =>
-    domdiv.insertAdjacentHTML(
+    DOMSelectors.domdiv.insertAdjacentHTML(
       "beforeend",
       `<div class = "help"><img class = "image" src="${element.url}" alt=""> <p class = "subtitles">${element.name}, ${element.price} dollars</p> </div>`
     )
@@ -46,9 +47,9 @@ function orangeColor() {
 
 function brownColor() {
   let temp = pets.filter((element) => element.color == "brown");
-  domdiv.innerHTML = "";
+  DOMSelectors.domdiv.innerHTML = "";
   temp.forEach((element) =>
-    domdiv.insertAdjacentHTML(
+    DOMSelectors.domdiv.insertAdjacentHTML(
       "beforeend",
       `<div class = "help"><img class = "image" src="${element.url}" alt=""> <p class = "subtitles">${element.name}, ${element.price} dollars</p> </div>`
     )
@@ -57,17 +58,21 @@ function brownColor() {
 
 function grayColor() {
   let temp = pets.filter((element) => element.color == "gray");
-  domdiv.innerHTML = "";
+  DOMSelectors.domdiv.innerHTML = "";
   temp.forEach((element) =>
-    domdiv.insertAdjacentHTML(
+    DOMSelectors.domdiv.insertAdjacentHTML(
       "beforeend",
       `<div class = "help"><img class = "image" src="${element.url}" alt=""> <p class = "subtitles">${element.name}, ${element.price} dollars</p> </div>`
     )
   );
 }
 
-redbutton.addEventListener("click", redColor);
-orangebutton.addEventListener("click", orangeColor);
-normalbutton.addEventListener("click", wowie);
-brownbutton.addEventListener("click", brownColor);
-graybutton.addEventListener("click", grayColor);
+DOMSelectors.darkbutton.addEventListener("click", function () {
+  document.body.classList.add("dark");
+});
+
+DOMSelectors.redbutton.addEventListener("click", redColor);
+DOMSelectors.orangebutton.addEventListener("click", orangeColor);
+DOMSelectors.normalbutton.addEventListener("click", wowie);
+DOMSelectors.brownbutton.addEventListener("click", brownColor);
+DOMSelectors.graybutton.addEventListener("click", grayColor);

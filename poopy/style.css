@@ -21,3 +21,8 @@ width: 300px;
 .help {
   margin: 50px;
 }
+
+.dark {
+  background-color: #393b39;
+  color: white;
+}
