@@ -16,7 +16,6 @@ function wowie() {
     .map((value) => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
-  console.log(temp);
   DOMSelectors.domdiv.innerHTML = "";
   temp.forEach((element) =>
     DOMSelectors.domdiv.insertAdjacentHTML(
