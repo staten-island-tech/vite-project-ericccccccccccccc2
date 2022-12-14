@@ -1,4 +1,4 @@
-const pets = [
+let pets = [
   {
     name: "rock",
     price: 5,
