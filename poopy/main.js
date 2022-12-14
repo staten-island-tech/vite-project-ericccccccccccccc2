@@ -9,16 +9,21 @@ const DOMSelectors = {
   brownbutton: document.getElementById("brown"),
   graybutton: document.getElementById("gray"),
   darkbutton: document.getElementById("dark"),
+  randombutton: document.getElementById("random"),
 };
 function wowie() {
+  let temp = pets
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+  console.log(temp);
   DOMSelectors.domdiv.innerHTML = "";
-  pets.forEach((element) =>
+  temp.forEach((element) =>
     DOMSelectors.domdiv.insertAdjacentHTML(
       "beforeend",
       `<div class = "help"><img class = "image" src="${element.url}" alt=""> <p class = "subtitles">${element.name}, ${element.price} dollars</p> </div>`
     )
   );
-  document.body.classList.remove("dark");
 }
 
 wowie();
