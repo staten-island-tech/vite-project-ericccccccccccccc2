@@ -1,3 +1,5 @@
+
+
 .parent {
   display: flex;
   justify-content: center;
@@ -22,7 +24,24 @@ width: 300px;
   margin: 50px;
 }
 
+:root {
+  --first-color: #393b39;
+  --second-color: #fffaeb;
+  --third-color: #0b2f5e;
+  --fourth-color: #edbc1a;
+}
+
 .dark {
-  background-color: #393b39;
-  color: white;
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+.blue {
+  background-color: var(--third-color);
+  color: var(--fourth-color);
+}
+
+.light {
+  background-color: var(--second-color);
+  color: var(--first-color);
 }

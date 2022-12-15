@@ -23,7 +23,7 @@ let pets = [
   {
     name: "mouse",
     price: 15,
-    color: "gray",
+    color: "brown",
     animal: true,
     url: "https://media.istockphoto.com/id/492697068/photo/cut-out-field-mouse.jpg?s=612x612&w=0&k=20&c=KX9dJmu-HF6dYbwNqb2mhSJmpyVHDB_7V7yGfbCPNhA=",
   },
@@ -37,7 +37,7 @@ let pets = [
   {
     name: "lizard",
     price: 16,
-    color: "orange",
+    color: "green",
     animal: true,
     url: "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/06/lizard-iguana-1296x728-header.jpg?w=1155&h=1528",
   },
@@ -56,16 +56,9 @@ let pets = [
     url: "https://media.fisheries.noaa.gov/styles/original/s3/2021-03/640x427-Crab_Atlantic_Deep_Sea_Red_NB_W.jpg?itok=5ccYxI_1",
   },
   {
-    name: "flashdrive",
-    price: 7,
-    color: "gray",
-    animal: false,
-    url: "https://m.media-amazon.com/images/I/71HDM0Knz3L.__AC_SY300_SX300_QL70_FMwebp_.jpg",
-  },
-  {
     name: "monkey",
     price: 892,
-    color: "brown",
+    color: "gray",
     animal: true,
     url: "https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s800-c85.webp",
   },
@@ -114,7 +107,7 @@ let pets = [
   {
     name: "kangaroo",
     price: 42,
-    color: "orange",
+    color: "gray",
     animal: true,
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kangaroo_Australia_01_11_2008_-_retouch.JPG/1024px-Kangaroo_Australia_01_11_2008_-_retouch.JPG",
   },

@@ -10,6 +10,8 @@ const DOMSelectors = {
   graybutton: document.getElementById("gray"),
   darkbutton: document.getElementById("dark"),
   randombutton: document.getElementById("random"),
+  lightbutton: document.getElementById("light"),
+  bluebutton: document.getElementById("blue"),
 };
 function wowie() {
   let temp = pets
@@ -72,7 +74,15 @@ function grayColor() {
 }
 
 DOMSelectors.darkbutton.addEventListener("click", function () {
-  document.body.classList.add("dark");
+  document.body.className = "dark";
+});
+
+DOMSelectors.lightbutton.addEventListener("click", function () {
+  document.body.className = "light";
+});
+
+DOMSelectors.bluebutton.addEventListener("click", function () {
+  document.body.className = "blue";
 });
 
 DOMSelectors.redbutton.addEventListener("click", redColor);
