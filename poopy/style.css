@@ -3,12 +3,13 @@
 .parent {
   display: flex;
   justify-content: center;
-  align-content: horizontal;
   flex-wrap: wrap;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Abyssinica SIL', serif;
+  font-size: 60px;
 }
 
 .subtitles {
@@ -44,4 +45,35 @@ width: 300px;
 .light {
   background-color: var(--second-color);
   color: var(--first-color);
+}
+
+.themes{
+  margin-right: 60px;
+  height: 20px;
+  width: 20px;
+}
+
+.filters{
+}
+
+#dark {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/0/14.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 100%;
+
+}
+
+#light {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Circle_-_black_simple_fullpage.svg/428px-Circle_-_black_simple_fullpage.svg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 100%;
+
 }

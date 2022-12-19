@@ -12,6 +12,7 @@ const DOMSelectors = {
   randombutton: document.getElementById("random"),
   lightbutton: document.getElementById("light"),
   bluebutton: document.getElementById("blue"),
+  greenbutton: document.getElementById("green"),
 };
 function wowie() {
   let temp = pets
@@ -73,6 +74,17 @@ function grayColor() {
   );
 }
 
+function greenColor() {
+  let temp = pets.filter((element) => element.color == "green");
+  DOMSelectors.domdiv.innerHTML = "";
+  temp.forEach((element) =>
+    DOMSelectors.domdiv.insertAdjacentHTML(
+      "beforeend",
+      `<div class = "help"><img class = "image" src="${element.url}" alt=""> <p class = "subtitles">${element.name}, ${element.price} dollars</p> </div>`
+    )
+  );
+}
+
 DOMSelectors.darkbutton.addEventListener("click", function () {
   document.body.className = "dark";
 });
@@ -90,3 +102,4 @@ DOMSelectors.orangebutton.addEventListener("click", orangeColor);
 DOMSelectors.normalbutton.addEventListener("click", wowie);
 DOMSelectors.brownbutton.addEventListener("click", brownColor);
 DOMSelectors.graybutton.addEventListener("click", grayColor);
+DOMSelectors.greenbutton.addEventListener("click", greenColor);

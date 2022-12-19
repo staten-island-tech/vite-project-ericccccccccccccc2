@@ -79,7 +79,7 @@ let pets = [
   {
     name: "beetle",
     price: 23,
-    color: "brown",
+    color: "green",
     animal: true,
     url: "https://animals.sandiegozoo.org/sites/default/files/2016-10/beetle_frog.jpg",
   },

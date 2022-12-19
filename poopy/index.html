@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter+Tight:wght@200&display=swap" rel="stylesheet">
     <title>Vite App</title>
   </head>
 
-  <body class="light">
+  <body class="dark">
     <h1>Pet Store</h1>
     <div class="parent">
-      <button id="dark">dark mode</button>
-      <button id="light">light mode</button>
-      <button id ="blue">blue mode?</button>
-      <button id="normal">reset filters</button>
-      <button id="red">red animals</button>
-      <button id="orange">orange-ish animals</button>
-      <button id="green">green animals</button>
-      <button id="brown">brown animals</button>
-      <button id="gray">gray animals</button>
+      <div class="themes">
+        <p>themes</p>
+        <button id="dark"></button>
+        <button id="light"></button>
+        <button id ="blue">blue mode?</button>
+      </div>
+      <div class="filters">
+        <p>filter by</p>
+        <button id="normal">reset filters</button>
+        <button id="red">red animals</button>
+        <button id="orange">orange-ish animals</button>
+        <button id="green">green animals</button>
+        <button id="brown">brown animals</button>
+        <button id="gray">gray animals</button>
+      </div>
     </div>
 
     <div id="one" class="parent"></div>
