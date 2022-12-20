@@ -48,12 +48,16 @@ width: 300px;
 }
 
 .themes{
-  margin-right: 60px;
-  height: 20px;
-  width: 20px;
+  margin-left: 30px;
+  margin-top: 30px;
+  
 }
 
 .filters{
+
+  border: 0;
+  outline: 0;
+
 }
 
 #dark {
@@ -68,7 +72,7 @@ width: 300px;
 }
 
 #light {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Circle_-_black_simple_fullpage.svg/428px-Circle_-_black_simple_fullpage.svg.png);
+  background-image: url(https://www.google.com/search?q=blue+circle&rlz=1C1GCEU_enUS1022US1022&oq=blue+circle&aqs=chrome..69i57j0i131i433i512j0i512l8.2608j1j7&sourceid=chrome&ie=UTF-8#imgrc=_8bmeDQewQ3trM);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 20px;
@@ -76,4 +80,32 @@ width: 300px;
   border: none;
   border-radius: 100%;
 
+}
+
+#blue {
+  background-image: url(https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-blue-circle_1f535.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 100%;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+$bg: #fff;
+$text: #382b22;
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2;
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
 }
