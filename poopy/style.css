@@ -14,6 +14,9 @@ h1 {
 
 .subtitles {
   text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+
 }
 
 .image { 
@@ -53,11 +56,38 @@ width: 300px;
   
 }
 
-.filters{
+buttons {
+  /* Variables */
+ --button_radius: 0.75em;
+ --button_color: #e8e8e8;
+ --button_outline_color: #000000;
+ font-size: 17px;
+ font-weight: bold;
+ border: none;
+ border-radius: var(--button_radius);
+ background: var(--button_outline_color);
+}
 
-  border: 0;
-  outline: 0;
+.filters {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid var(--button_outline_color);
+ border-radius: var(--button_radius);
+ padding: 0.75em 1.5em;
+ background: var(--button_color);
+ color: var(--button_outline_color);
+ transform: translateY(-0.2em);
+ transition: transform 0.1s ease;
+}
 
+button:hover .filters {
+  /* Pull the button upwards when hovered */
+ transform: translateY(-0.33em);
+}
+
+.filters:active .filters {
+  /* Push the button downwards when pressed */
+ transform: translateY(0);
 }
 
 #dark {
@@ -93,19 +123,3 @@ width: 300px;
 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
-
-$bg: #fff;
-$text: #382b22;
-$light-pink: #fff0f0;
-$pink: #ffe9e9;
-$dark-pink: #f9c4d2;
-$pink-border: #b18597;
-$pink-shadow: #ffe3e2;
-
-* {
-  box-sizing: border-box;
-  &::before, &::after {
-    box-sizing: border-box;
-  }
-}
