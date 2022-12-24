@@ -13,6 +13,9 @@ const DOMSelectors = {
   lightbutton: document.getElementById("light"),
   bluebutton: document.getElementById("blue"),
   greenbutton: document.getElementById("green"),
+  hitolow: document.getElementById("hi_to_low"),
+  lowtohi: document.getElementById("low_to_hi")
+
 };
 function wowie() {
   let temp = pets
@@ -85,6 +88,15 @@ function greenColor() {
   );
 }
 
+
+
+
+function hitolow() {
+  pets.price.sort(function(a, b){return a-b});
+  console.log(pets);
+}  
+
+
 DOMSelectors.darkbutton.addEventListener("click", function () {
   document.body.className = "dark";
 });
@@ -103,3 +115,5 @@ DOMSelectors.normalbutton.addEventListener("click", wowie);
 DOMSelectors.brownbutton.addEventListener("click", brownColor);
 DOMSelectors.graybutton.addEventListener("click", grayColor);
 DOMSelectors.greenbutton.addEventListener("click", greenColor);
+
+hitolow();
