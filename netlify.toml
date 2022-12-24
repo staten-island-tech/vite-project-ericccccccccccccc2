@@ -1,4 +1,4 @@
 [build]
-base = "."
+base = "poopy"
 command = "npm run build"
-publish = ".dist"
+publish = "poopy/dist"
